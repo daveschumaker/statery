@@ -46,7 +46,8 @@
     "docs": "typedoc src/index.ts",
     "ci": "preconstruct validate && pnpm build && pnpm test",
     "ci:version": "changeset version && pnpm install --no-frozen-lockfile",
-    "ci:release": "pnpm ci && pnpm changeset publish"
+    "ci:release": "pnpm ci && pnpm changeset publish",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.19.0",
